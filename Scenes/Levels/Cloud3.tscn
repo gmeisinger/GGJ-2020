@@ -1,0 +1,48 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Assets/Sprites/pinkclouds001_200201-Sheet.png" type="Texture" id=1]
+
+[sub_resource type="Animation" id=1]
+resource_name = "cloud"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ 4, 5 ]
+}
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 138.53, 10 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 88.3809, 6.82158 )
+
+[node name="Cloud3" type="Node2D"]
+
+[node name="pinkclouds001_200201-Sheet" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+vframes = 3
+hframes = 2
+frame = 5
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="pinkclouds001_200201-Sheet"]
+anims/cloud = SubResource( 1 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 2.11594, -18.4985 )
+shape = SubResource( 2 )
+one_way_collision = true
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 23.8747, -39.2197 )
+shape = SubResource( 3 )
+one_way_collision = true
