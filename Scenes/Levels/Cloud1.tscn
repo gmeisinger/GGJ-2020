@@ -27,9 +27,9 @@ extents = Vector2( 155.328, 10 )
 texture = ExtResource( 1 )
 vframes = 3
 hframes = 2
-frame = 1
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="pinkclouds001_200201-Sheet"]
+autoplay = "cloud"
 anims/cloud = SubResource( 1 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
