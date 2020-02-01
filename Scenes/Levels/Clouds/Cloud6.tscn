@@ -21,13 +21,13 @@ tracks/0/keys = {
 [sub_resource type="RectangleShape2D" id=2]
 extents = Vector2( 43.8957, 4.68502 )
 
-[node name="Cloud5" type="Node2D"]
+[node name="Cloud6" type="Node2D"]
 
 [node name="pinkclouds001_200201-Sheet" type="Sprite" parent="."]
 texture = ExtResource( 1 )
 vframes = 4
 hframes = 2
-frame = 5
+frame = 4
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="pinkclouds001_200201-Sheet"]
 autoplay = "cloud"
