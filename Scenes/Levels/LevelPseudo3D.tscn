@@ -14,10 +14,7 @@
 
 [node name="LevelPseudo3D" type="Node2D"]
 
-[node name="BackGround" type="CanvasLayer" parent="."]
-layer = -10
-
-[node name="Background2" parent="BackGround" instance=ExtResource( 4 )]
+[node name="Background2" parent="." instance=ExtResource( 4 )]
 position = Vector2( -490.3, -76.3724 )
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
