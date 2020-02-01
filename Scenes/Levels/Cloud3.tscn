@@ -22,7 +22,7 @@ tracks/0/keys = {
 extents = Vector2( 138.53, 10 )
 
 [sub_resource type="RectangleShape2D" id=3]
-extents = Vector2( 88.3809, 6.82158 )
+extents = Vector2( 88.2741, 16.7812 )
 
 [node name="Cloud3" type="Node2D"]
 
@@ -44,6 +44,6 @@ shape = SubResource( 2 )
 one_way_collision = true
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2( 23.8747, -39.2197 )
+position = Vector2( 22.3653, -27.8991 )
 shape = SubResource( 3 )
 one_way_collision = true
