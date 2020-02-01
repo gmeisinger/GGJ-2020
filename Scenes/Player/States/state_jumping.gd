@@ -7,6 +7,7 @@ func enter():
 	jump_delta = 0.0
 	host.jump()
 	host.play_anim("jump")
+	host.play_jump_sound()
 
 func update(delta):
 	jump_delta += delta
