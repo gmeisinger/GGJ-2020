@@ -30,6 +30,7 @@ hframes = 2
 frame = 3
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="pinkclouds001_200201-Sheet"]
+autoplay = "cloud"
 anims/cloud = SubResource( 1 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]

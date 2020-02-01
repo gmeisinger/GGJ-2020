@@ -8,7 +8,3 @@ position = Vector2( 2.37815, -0.878235 )
 [node name="200201 background" type="Sprite" parent="."]
 position = Vector2( 491.632, 328.947 )
 texture = ExtResource( 1 )
-
-[node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2( 497.171, 469.657 )
-current = true

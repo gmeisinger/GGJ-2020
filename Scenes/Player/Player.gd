@@ -44,3 +44,8 @@ func apply_friction(delta):
 func play_anim(anim_name, speed : float = 1.0):
 	if $AnimationPlayer.current_animation != anim_name:
 		$AnimationPlayer.play(anim_name, -1, speed)
+
+
+func play_jump_sound():
+	$AudioStreamPlayer2D.play()
+	

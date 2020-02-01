@@ -11,5 +11,5 @@ dest_files=[ "res://.import/beep_boop.ogg-37919a8e569c0369eabf7a4eb05301ff.oggst
 
 [params]
 
-loop=true
+loop=false
 loop_offset=0
