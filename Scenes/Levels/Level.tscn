@@ -1,12 +1,16 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Scenes/Player/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scenes/Platform/Platform.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Assets/Background/background_sky.png" type="Texture" id=3]
 
 [node name="Level" type="Node2D"]
 
+[node name="Background" type="Sprite" parent="."]
+texture = ExtResource( 3 )
+
 [node name="Platform" parent="." instance=ExtResource( 2 )]
-position = Vector2( 511.92, 468.691 )
+position = Vector2( 248.558, 248.889 )
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
-position = Vector2( 497.439, 388.341 )
+position = Vector2( 234.077, 168.539 )
