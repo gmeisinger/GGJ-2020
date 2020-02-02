@@ -9,7 +9,7 @@
 [ext_resource path="res://Assets/Sounds/jump2.ogg" type="AudioStream" id=7]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 10, 13.9225 )
+extents = Vector2( 7.03378, 14.5473 )
 
 [sub_resource type="Animation" id=2]
 resource_name = "fall"
@@ -77,7 +77,8 @@ tracks/0/keys = {
 }
 
 [sub_resource type="CapsuleShape2D" id=6]
-height = 6.02181
+radius = 7.53106
+height = 12.2985
 
 [node name="Player" type="KinematicBody2D"]
 collision_layer = 2
@@ -93,7 +94,7 @@ frame = 15
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 visible = false
-position = Vector2( -2.50275, 10.9915 )
+position = Vector2( 0, 10.3092 )
 shape = SubResource( 1 )
 
 [node name="stateMachine" parent="." instance=ExtResource( 2 )]
@@ -130,6 +131,6 @@ collision_layer = 2
 collision_mask = 4
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="hitbox"]
-position = Vector2( -2.32774, 8.05009 )
+position = Vector2( 0, 8.44785 )
 shape = SubResource( 6 )
 [connection signal="body_entered" from="hitbox" to="." method="_on_hitbox_body_entered"]
