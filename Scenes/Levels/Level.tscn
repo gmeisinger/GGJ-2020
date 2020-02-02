@@ -1,6 +1,7 @@
-[gd_scene load_steps=23 format=2]
+[gd_scene load_steps=25 format=2]
 
 [ext_resource path="res://Scenes/Player/Player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Scenes/Enemy/PatrollingEnemy.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Scenes/Levels/Background.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Scenes/Levels/Clouds/Cloud2.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Scenes/Levels/Clouds/Cloud1.tscn" type="PackedScene" id=5]
@@ -20,6 +21,7 @@
 [ext_resource path="res://Scenes/Levels/Tree/Branch3.tscn" type="PackedScene" id=19]
 [ext_resource path="res://Scenes/Levels/Tree/Branch4.tscn" type="PackedScene" id=20]
 [ext_resource path="res://Scenes/Levels/Tree/Branch5.tscn" type="PackedScene" id=21]
+[ext_resource path="res://Scenes/Enemy/ShootingStarTrap.tscn" type="PackedScene" id=22]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 8.85272, 1741.28 )
@@ -151,3 +153,19 @@ position = Vector2( -410.522, 334.844 )
 
 [node name="MoonCollectedParticle" parent="." instance=ExtResource( 15 )]
 position = Vector2( -166.079, -142.399 )
+
+[node name="Enemies" type="Node" parent="."]
+
+[node name="PatrollingEnemy" parent="Enemies" instance=ExtResource( 2 )]
+position = Vector2( -33.5995, 1240.34 )
+
+[node name="ShootingStarTrap" parent="Enemies" instance=ExtResource( 22 )]
+position = Vector2( -239.212, 1405.84 )
+
+[node name="spawn" parent="Enemies/ShootingStarTrap" index="1"]
+position = Vector2( -285.229, -254.924 )
+
+[node name="ShootingStar" parent="Enemies/ShootingStarTrap/spawn" index="0"]
+position = Vector2( -77.1061, -79.1089 )
+
+[editable path="Enemies/ShootingStarTrap"]
