@@ -65,6 +65,7 @@ position = Vector2( -251.752, 1032.18 )
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
 position = Vector2( 390.708, 1500.63 )
+collision_mask = 1
 
 [node name="Branches" type="Node" parent="."]
 
@@ -118,17 +119,98 @@ position = Vector2( 273.001, 80.0004 )
 [node name="Cloud3" parent="Clouds" instance=ExtResource( 6 )]
 position = Vector2( 77.0007, -14.9997 )
 
+[node name="Cloud25" parent="Clouds" instance=ExtResource( 6 )]
+position = Vector2( -113.599, -382.462 )
+
+[node name="Cloud35" parent="Clouds" instance=ExtResource( 6 )]
+position = Vector2( 43.3805, -669.251 )
+
 [node name="Cloud4" parent="Clouds" instance=ExtResource( 9 )]
 position = Vector2( -204.553, 8.02017 )
+
+[node name="Cloud26" parent="Clouds" instance=ExtResource( 9 )]
+position = Vector2( -384.438, -429.398 )
+
+[node name="Cloud31" parent="Clouds" instance=ExtResource( 9 )]
+position = Vector2( -414.986, -687.035 )
+
+[node name="Cloud13" parent="Clouds" instance=ExtResource( 9 )]
+position = Vector2( 275.382, 815.401 )
 
 [node name="Cloud5" parent="Clouds" instance=ExtResource( 10 )]
 position = Vector2( -266.976, 178.015 )
 
+[node name="Cloud17" parent="Clouds" instance=ExtResource( 10 )]
+position = Vector2( -270.877, -214.076 )
+
+[node name="Cloud18" parent="Clouds" instance=ExtResource( 10 )]
+position = Vector2( -101.166, -200.421 )
+
+[node name="Cloud19" parent="Clouds" instance=ExtResource( 10 )]
+position = Vector2( 50.9885, -230.657 )
+
+[node name="Cloud28" parent="Clouds" instance=ExtResource( 10 )]
+position = Vector2( -341.782, -559.314 )
+
+[node name="Cloud29" parent="Clouds" instance=ExtResource( 10 )]
+position = Vector2( -426.066, -599.8 )
+
+[node name="Cloud20" parent="Clouds" instance=ExtResource( 10 )]
+position = Vector2( 198.267, -266.745 )
+
+[node name="Cloud24" parent="Clouds" instance=ExtResource( 10 )]
+position = Vector2( 89.2299, -416.993 )
+
+[node name="Cloud38" parent="Clouds" instance=ExtResource( 10 )]
+position = Vector2( 383.566, -644.914 )
+
+[node name="Cloud43" parent="Clouds" instance=ExtResource( 10 )]
+position = Vector2( 185.926, -987.491 )
+
+[node name="Cloud44" parent="Clouds" instance=ExtResource( 10 )]
+position = Vector2( 58.9089, -1051.79 )
+
+[node name="Cloud21" parent="Clouds" instance=ExtResource( 10 )]
+position = Vector2( 317.905, -315.233 )
+
 [node name="Cloud6" parent="Clouds" instance=ExtResource( 11 )]
 position = Vector2( -400.388, 124.268 )
 
+[node name="Cloud14" parent="Clouds" instance=ExtResource( 11 )]
+position = Vector2( -439.867, -43.1624 )
+
 [node name="Cloud7" parent="Clouds" instance=ExtResource( 8 )]
 position = Vector2( -397.13, 46.8906 )
+
+[node name="Cloud22" parent="Clouds" instance=ExtResource( 8 )]
+position = Vector2( 410.824, -176.048 )
+
+[node name="Cloud15" parent="Clouds" instance=ExtResource( 8 )]
+position = Vector2( -393.325, -108.648 )
+
+[node name="Cloud27" parent="Clouds" instance=ExtResource( 8 )]
+position = Vector2( -421.885, -511.071 )
+
+[node name="Cloud32" parent="Clouds" instance=ExtResource( 8 )]
+position = Vector2( -354.163, -762.451 )
+
+[node name="Cloud37" parent="Clouds" instance=ExtResource( 8 )]
+position = Vector2( 272.245, -591.887 )
+
+[node name="Cloud39" parent="Clouds" instance=ExtResource( 8 )]
+position = Vector2( 430.733, -729.999 )
+
+[node name="Cloud42" parent="Clouds" instance=ExtResource( 8 )]
+position = Vector2( 275.256, -953.464 )
+
+[node name="Cloud46" parent="Clouds" instance=ExtResource( 8 )]
+position = Vector2( 87.6298, -1213.3 )
+
+[node name="Cloud30" parent="Clouds" instance=ExtResource( 8 )]
+position = Vector2( -353.795, -637.313 )
+
+[node name="Cloud33" parent="Clouds" instance=ExtResource( 8 )]
+position = Vector2( -443.6, -823.548 )
 
 [node name="Cloud8" parent="Clouds" instance=ExtResource( 4 )]
 position = Vector2( -91.9941, 613.139 )
@@ -142,6 +224,27 @@ position = Vector2( 248.536, 453.115 )
 [node name="Cloud11" parent="Clouds" instance=ExtResource( 9 )]
 position = Vector2( 178.708, 282.28 )
 
+[node name="Cloud16" parent="Clouds" instance=ExtResource( 9 )]
+position = Vector2( -419.613, -160.147 )
+
+[node name="Cloud23" parent="Clouds" instance=ExtResource( 9 )]
+position = Vector2( 198.337, -351.679 )
+
+[node name="Cloud34" parent="Clouds" instance=ExtResource( 9 )]
+position = Vector2( -198.64, -670.166 )
+
+[node name="Cloud36" parent="Clouds" instance=ExtResource( 9 )]
+position = Vector2( -310.337, -952.426 )
+
+[node name="Cloud40" parent="Clouds" instance=ExtResource( 9 )]
+position = Vector2( 327.91, -806.436 )
+
+[node name="Cloud41" parent="Clouds" instance=ExtResource( 9 )]
+position = Vector2( 186.136, -866.519 )
+
+[node name="Cloud45" parent="Clouds" instance=ExtResource( 9 )]
+position = Vector2( -41.5458, -1137.42 )
+
 [node name="Cloud12" parent="Clouds" instance=ExtResource( 10 )]
 position = Vector2( 311.432, 338 )
 
@@ -149,7 +252,28 @@ position = Vector2( 311.432, 338 )
 position = Vector2( -203.597, -1155.19 )
 
 [node name="MoonPiecePickup" parent="." instance=ExtResource( 14 )]
-position = Vector2( -410.522, 334.844 )
+position = Vector2( -69.9599, 1481.28 )
+
+[node name="MoonPiecePickup2" parent="." instance=ExtResource( 14 )]
+position = Vector2( -412.673, 335.561 )
+
+[node name="MoonPiecePickup3" parent="." instance=ExtResource( 14 )]
+position = Vector2( 267.734, 768.613 )
+
+[node name="MoonPiecePickup4" parent="." instance=ExtResource( 14 )]
+position = Vector2( -423.235, -206.699 )
+
+[node name="MoonPiecePickup5" parent="." instance=ExtResource( 14 )]
+position = Vector2( 411.823, -210.613 )
+
+[node name="MoonPiecePickup6" parent="." instance=ExtResource( 14 )]
+position = Vector2( -447.096, -863.044 )
+
+[node name="MoonPiecePickup7" parent="." instance=ExtResource( 14 )]
+position = Vector2( -309.538, -996.386 )
+
+[node name="MoonPiecePickup8" parent="." instance=ExtResource( 14 )]
+position = Vector2( 206.962, -1299.96 )
 
 [node name="MoonCollectedParticle" parent="." instance=ExtResource( 15 )]
 position = Vector2( -166.079, -142.399 )
@@ -185,7 +309,7 @@ position = Vector2( 11.4716, -70.9803 )
 position = Vector2( -2.33948, -3.51196 )
 
 [node name="ShootingStar" parent="Enemies/ShootingStarTrap2" index="2"]
-position = Vector2( 319.851, -522.321 )
+position = Vector2( 319.851, -617.44 )
 left = true
 
 [node name="ShootingStarTrap3" parent="Enemies" instance=ExtResource( 22 )]
@@ -199,21 +323,21 @@ position = Vector2( -174.565, 573.525 )
 left = true
 
 [node name="ShootingStar" parent="Enemies/ShootingStarTrap4" index="2"]
-position = Vector2( 375.767, -218.49 )
+position = Vector2( 296.825, -256.02 )
 
 [node name="ShootingStarTrap8" parent="Enemies" instance=ExtResource( 22 )]
 position = Vector2( -120.565, 573.525 )
 left = true
 
 [node name="ShootingStar" parent="Enemies/ShootingStarTrap8" index="2"]
-position = Vector2( 375.767, -218.49 )
+position = Vector2( 313.649, -252.138 )
 
 [node name="ShootingStarTrap9" parent="Enemies" instance=ExtResource( 22 )]
 position = Vector2( -66.5655, 573.525 )
 left = true
 
 [node name="ShootingStar" parent="Enemies/ShootingStarTrap9" index="2"]
-position = Vector2( 375.767, -218.49 )
+position = Vector2( 314.943, -263.785 )
 
 [node name="ShootingStarTrap10" parent="Enemies" instance=ExtResource( 22 )]
 position = Vector2( -12.5655, 573.525 )
@@ -233,7 +357,7 @@ position = Vector2( 375.767, -218.49 )
 position = Vector2( 23.4345, 467.525 )
 
 [node name="ShootingStar" parent="Enemies/ShootingStarTrap12" index="2"]
-position = Vector2( -209.479, -255.591 )
+position = Vector2( -205.674, -254.164 )
 
 [node name="ShootingStarTrap7" parent="Enemies" instance=ExtResource( 22 )]
 position = Vector2( -29.0149, 786.732 )
@@ -242,11 +366,11 @@ position = Vector2( -29.0149, 786.732 )
 position = Vector2( -507.999, -297.512 )
 
 [node name="ShootingStarTrap6" parent="Enemies" instance=ExtResource( 22 )]
-position = Vector2( -146.026, 788.159 )
+position = Vector2( -150.026, 782.159 )
 left = true
 
 [node name="ShootingStar" parent="Enemies/ShootingStarTrap6" index="2"]
-position = Vector2( 208.336, -381.46 )
+position = Vector2( 131.982, -350.401 )
 
 [node name="ShootingStarTrap5" parent="Enemies" instance=ExtResource( 22 )]
 position = Vector2( -268.269, 787.683 )
@@ -325,6 +449,279 @@ left = true
 [node name="ShootingStar" parent="Enemies/ShootingStarTrap23" index="2"]
 position = Vector2( 336.028, -199.775 )
 
+[node name="PatrollingEnemy5" parent="Enemies" instance=ExtResource( 2 )]
+position = Vector2( 237.327, -406.559 )
+
+[node name="PatrollingEnemy7" parent="Enemies" instance=ExtResource( 2 )]
+position = Vector2( 69.0266, -752.97 )
+
+[node name="PatrollingEnemy6" parent="Enemies" instance=ExtResource( 2 )]
+position = Vector2( -412.433, -742.729 )
+
+[node name="ShootingStarTrap24" parent="Enemies" instance=ExtResource( 22 )]
+position = Vector2( -335.181, -235.533 )
+
+[node name="CollisionShape2D" parent="Enemies/ShootingStarTrap24/trigger" index="0"]
+position = Vector2( -8.30179, -35.4713 )
+
+[node name="ShootingStar" parent="Enemies/ShootingStarTrap24" index="2"]
+position = Vector2( -13.3903, -236.329 )
+
+[node name="ShootingStarTrap25" parent="Enemies" instance=ExtResource( 22 )]
+position = Vector2( -181.07, -273.738 )
+left = true
+
+[node name="CollisionShape2D" parent="Enemies/ShootingStarTrap25/trigger" index="0"]
+position = Vector2( -0.7547, -45.2825 )
+
+[node name="ShootingStar" parent="Enemies/ShootingStarTrap25" index="2"]
+position = Vector2( 212.407, -205.169 )
+
+[node name="ShootingStarTrap26" parent="Enemies" instance=ExtResource( 22 )]
+position = Vector2( -41.555, -272.88 )
+left = true
+
+[node name="CollisionShape2D" parent="Enemies/ShootingStarTrap26/trigger" index="0"]
+position = Vector2( -4.52826, -39.9995 )
+
+[node name="ShootingStar" parent="Enemies/ShootingStarTrap26" index="2"]
+position = Vector2( 379.013, -166.989 )
+
+[node name="ShootingStarTrap27" parent="Enemies" instance=ExtResource( 22 )]
+position = Vector2( 106.975, -302.929 )
+
+[node name="ShootingStar" parent="Enemies/ShootingStarTrap27" index="2"]
+position = Vector2( -111.612, -172.101 )
+
+[node name="ShootingStarTrap28" parent="Enemies" instance=ExtResource( 22 )]
+position = Vector2( 293.711, -340.706 )
+left = true
+
+[node name="ShootingStar" parent="Enemies/ShootingStarTrap28" index="2"]
+position = Vector2( 168.277, -217.892 )
+
+[node name="ShootingStarTrap29" parent="Enemies" instance=ExtResource( 22 )]
+position = Vector2( 3.08987, -444.591 )
+left = true
+
+[node name="ShootingStar" parent="Enemies/ShootingStarTrap29" index="2"]
+position = Vector2( 323.676, -287.088 )
+
+[node name="ShootingStarTrap30" parent="Enemies" instance=ExtResource( 22 )]
+position = Vector2( -53.1456, -444.162 )
+left = true
+
+[node name="ShootingStar" parent="Enemies/ShootingStarTrap30" index="2"]
+position = Vector2( 203.478, -257.093 )
+
+[node name="ShootingStarTrap31" parent="Enemies" instance=ExtResource( 22 )]
+position = Vector2( -112.386, -444.162 )
+left = true
+
+[node name="ShootingStar" parent="Enemies/ShootingStarTrap31" index="2"]
+position = Vector2( 254.991, -344.671 )
+
+[node name="ShootingStarTrap32" parent="Enemies" instance=ExtResource( 22 )]
+position = Vector2( -171.197, -442.874 )
+left = true
+
+[node name="ShootingStar" parent="Enemies/ShootingStarTrap32" index="2"]
+position = Vector2( 319.812, -412.194 )
+
+[node name="ShootingStarTrap33" parent="Enemies" instance=ExtResource( 22 )]
+position = Vector2( -267.355, -463.479 )
+
+[node name="ShootingStar" parent="Enemies/ShootingStarTrap33" index="2"]
+position = Vector2( -319.383, -203.716 )
+
+[node name="ShootingStarTrap34" parent="Enemies" instance=ExtResource( 22 )]
+position = Vector2( -417.173, -540.75 )
+left = true
+
+[node name="ShootingStar" parent="Enemies/ShootingStarTrap34" index="2"]
+position = Vector2( 273.45, -163.242 )
+
+[node name="ShootingStarTrap35" parent="Enemies" instance=ExtResource( 22 )]
+position = Vector2( -344.625, -585.395 )
+
+[node name="ShootingStar" parent="Enemies/ShootingStarTrap35" index="2"]
+position = Vector2( -224.083, -169.384 )
+
+[node name="ShootingStarTrap36" parent="Enemies" instance=ExtResource( 22 )]
+position = Vector2( -419.32, -626.176 )
+left = true
+
+[node name="ShootingStar" parent="Enemies/ShootingStarTrap36" index="2"]
+position = Vector2( 277.743, -167.945 )
+
+[node name="ShootingStarTrap37" parent="Enemies" instance=ExtResource( 22 )]
+position = Vector2( -345.913, -663.953 )
+
+[node name="ShootingStar" parent="Enemies/ShootingStarTrap37" index="2"]
+position = Vector2( -238.249, -174.515 )
+
+[node name="ShootingStarTrap38" parent="Enemies" instance=ExtResource( 22 )]
+position = Vector2( -110.007, -784.472 )
+left = true
+
+[node name="ShootingStar" parent="Enemies/ShootingStarTrap38" index="2"]
+position = Vector2( 416.085, -154.716 )
+
+[node name="ShootingStarTrap39" parent="Enemies" instance=ExtResource( 22 )]
+position = Vector2( 165.718, -737.987 )
+
+[node name="ShootingStar" parent="Enemies/ShootingStarTrap39" index="2"]
+position = Vector2( -276.28, -212.625 )
+
+[node name="ShootingStarTrap40" parent="Enemies" instance=ExtResource( 22 )]
+position = Vector2( 230.073, -674.07 )
+
+[node name="ShootingStar" parent="Enemies/ShootingStarTrap40" index="2"]
+position = Vector2( -242.439, -252.131 )
+
+[node name="ShootingStarTrap41" parent="Enemies" instance=ExtResource( 22 )]
+position = Vector2( 261.14, -635.236 )
+
+[node name="ShootingStar" parent="Enemies/ShootingStarTrap41" index="2"]
+position = Vector2( -207.488, -285.301 )
+
+[node name="ShootingStarTrap42" parent="Enemies" instance=ExtResource( 22 )]
+position = Vector2( 325.721, -702.124 )
+left = true
+
+[node name="ShootingStar" parent="Enemies/ShootingStarTrap42" index="2"]
+position = Vector2( 282.383, -228.872 )
+
+[node name="ShootingStarTrap43" parent="Enemies" instance=ExtResource( 22 )]
+position = Vector2( 389.295, -768.938 )
+left = true
+
+[node name="ShootingStar" parent="Enemies/ShootingStarTrap43" index="2"]
+position = Vector2( 193.618, -239.933 )
+
+[node name="ShootingStarTrap44" parent="Enemies" instance=ExtResource( 22 )]
+position = Vector2( -429.193, -959.151 )
+script = null
+
+[node name="ShootingStar" parent="Enemies/ShootingStarTrap44" index="2"]
+position = Vector2( -138.691, -150.663 )
+
+[node name="ShootingStarTrap45" parent="Enemies" instance=ExtResource( 22 )]
+position = Vector2( -376.12, -930.111 )
+
+[node name="ShootingStar" parent="Enemies/ShootingStarTrap45" index="2"]
+position = Vector2( -164.226, -172.186 )
+
+[node name="ShootingStarTrap46" parent="Enemies" instance=ExtResource( 22 )]
+position = Vector2( -323.047, -911.085 )
+
+[node name="ShootingStar" parent="Enemies/ShootingStarTrap46" index="2"]
+position = Vector2( -180.749, -177.189 )
+
+[node name="ShootingStarTrap47" parent="Enemies" instance=ExtResource( 22 )]
+position = Vector2( -271.476, -887.052 )
+
+[node name="ShootingStar" parent="Enemies/ShootingStarTrap47" index="2"]
+position = Vector2( -252.848, -240.793 )
+
+[node name="ShootingStarTrap48" parent="Enemies" instance=ExtResource( 22 )]
+position = Vector2( 370.354, -840.145 )
+left = true
+
+[node name="ShootingStar" parent="Enemies/ShootingStarTrap48" index="2"]
+position = Vector2( 201.33, -210.221 )
+
+[node name="ShootingStarTrap49" parent="Enemies" instance=ExtResource( 22 )]
+position = Vector2( 318.177, -839.618 )
+
+[node name="ShootingStar" parent="Enemies/ShootingStarTrap49" index="2"]
+position = Vector2( -337.306, -275.331 )
+
+[node name="ShootingStarTrap50" parent="Enemies" instance=ExtResource( 22 )]
+position = Vector2( 261.257, -899.012 )
+left = true
+
+[node name="ShootingStar" parent="Enemies/ShootingStarTrap50" index="2"]
+position = Vector2( 292.508, -254.695 )
+
+[node name="ShootingStarTrap51" parent="Enemies" instance=ExtResource( 22 )]
+position = Vector2( 209.607, -898.647 )
+
+[node name="ShootingStar" parent="Enemies/ShootingStarTrap51" index="2"]
+position = Vector2( -296.454, -221.438 )
+
+[node name="ShootingStarTrap52" parent="Enemies" instance=ExtResource( 22 )]
+position = Vector2( 154.794, -898.647 )
+left = true
+
+[node name="ShootingStar" parent="Enemies/ShootingStarTrap52" index="2"]
+position = Vector2( 389.483, -281.399 )
+
+[node name="ShootingStarTrap53" parent="Enemies" instance=ExtResource( 22 )]
+position = Vector2( 198.539, -938.175 )
+
+[node name="ShootingStar" parent="Enemies/ShootingStarTrap53" index="2"]
+position = Vector2( -219.924, -266.683 )
+
+[node name="ShootingStarTrap54" parent="Enemies" instance=ExtResource( 22 )]
+position = Vector2( 240.175, -979.284 )
+left = true
+
+[node name="ShootingStar" parent="Enemies/ShootingStarTrap54" index="2"]
+position = Vector2( 316.752, -249.303 )
+
+[node name="ShootingStarTrap55" parent="Enemies" instance=ExtResource( 22 )]
+position = Vector2( 287.609, -977.703 )
+
+[node name="ShootingStar" parent="Enemies/ShootingStarTrap55" index="2"]
+position = Vector2( -346.793, -270.128 )
+
+[node name="ShootingStarTrap56" parent="Enemies" instance=ExtResource( 22 )]
+position = Vector2( 186.944, -1013.54 )
+left = true
+
+[node name="ShootingStar" parent="Enemies/ShootingStarTrap56" index="2"]
+position = Vector2( 366.82, -256.263 )
+
+[node name="ShootingStarTrap57" parent="Enemies" instance=ExtResource( 22 )]
+position = Vector2( 140.037, -1095.76 )
+
+[node name="ShootingStar" parent="Enemies/ShootingStarTrap57" index="2"]
+position = Vector2( -369.455, -226.101 )
+
+[node name="ShootingStarTrap58" parent="Enemies" instance=ExtResource( 22 )]
+position = Vector2( 42.5347, -1099.98 )
+left = true
+
+[node name="ShootingStar" parent="Enemies/ShootingStarTrap58" index="2"]
+position = Vector2( 286.655, -262.466 )
+
+[node name="ShootingStarTrap59" parent="Enemies" instance=ExtResource( 22 )]
+position = Vector2( -0.682709, -1169.02 )
+
+[node name="ShootingStar" parent="Enemies/ShootingStarTrap59" index="2"]
+position = Vector2( -294.089, -227.478 )
+
+[node name="ShootingStarTrap60" parent="Enemies" instance=ExtResource( 22 )]
+position = Vector2( -70.2521, -1171.13 )
+left = true
+
+[node name="ShootingStar" parent="Enemies/ShootingStarTrap60" index="2"]
+position = Vector2( 386.807, -231.898 )
+
+[node name="ShootingStarTrap61" parent="Enemies" instance=ExtResource( 22 )]
+position = Vector2( 81.0086, -1238.06 )
+
+[node name="ShootingStar" parent="Enemies/ShootingStarTrap61" index="2"]
+position = Vector2( -142.828, -180.68 )
+
+[node name="ShootingStarTrap62" parent="Enemies" instance=ExtResource( 22 )]
+position = Vector2( 94.7117, -1238.06 )
+left = true
+
+[node name="ShootingStar" parent="Enemies/ShootingStarTrap62" index="2"]
+position = Vector2( 266.519, -198.167 )
+
 [editable path="Enemies/ShootingStarTrap"]
 
 [editable path="Enemies/ShootingStarTrap2"]
@@ -370,3 +767,81 @@ position = Vector2( 336.028, -199.775 )
 [editable path="Enemies/ShootingStarTrap22"]
 
 [editable path="Enemies/ShootingStarTrap23"]
+
+[editable path="Enemies/ShootingStarTrap24"]
+
+[editable path="Enemies/ShootingStarTrap25"]
+
+[editable path="Enemies/ShootingStarTrap26"]
+
+[editable path="Enemies/ShootingStarTrap27"]
+
+[editable path="Enemies/ShootingStarTrap28"]
+
+[editable path="Enemies/ShootingStarTrap29"]
+
+[editable path="Enemies/ShootingStarTrap30"]
+
+[editable path="Enemies/ShootingStarTrap31"]
+
+[editable path="Enemies/ShootingStarTrap32"]
+
+[editable path="Enemies/ShootingStarTrap33"]
+
+[editable path="Enemies/ShootingStarTrap34"]
+
+[editable path="Enemies/ShootingStarTrap35"]
+
+[editable path="Enemies/ShootingStarTrap36"]
+
+[editable path="Enemies/ShootingStarTrap37"]
+
+[editable path="Enemies/ShootingStarTrap38"]
+
+[editable path="Enemies/ShootingStarTrap39"]
+
+[editable path="Enemies/ShootingStarTrap40"]
+
+[editable path="Enemies/ShootingStarTrap41"]
+
+[editable path="Enemies/ShootingStarTrap42"]
+
+[editable path="Enemies/ShootingStarTrap43"]
+
+[editable path="Enemies/ShootingStarTrap44"]
+
+[editable path="Enemies/ShootingStarTrap45"]
+
+[editable path="Enemies/ShootingStarTrap46"]
+
+[editable path="Enemies/ShootingStarTrap47"]
+
+[editable path="Enemies/ShootingStarTrap48"]
+
+[editable path="Enemies/ShootingStarTrap49"]
+
+[editable path="Enemies/ShootingStarTrap50"]
+
+[editable path="Enemies/ShootingStarTrap51"]
+
+[editable path="Enemies/ShootingStarTrap52"]
+
+[editable path="Enemies/ShootingStarTrap53"]
+
+[editable path="Enemies/ShootingStarTrap54"]
+
+[editable path="Enemies/ShootingStarTrap55"]
+
+[editable path="Enemies/ShootingStarTrap56"]
+
+[editable path="Enemies/ShootingStarTrap57"]
+
+[editable path="Enemies/ShootingStarTrap58"]
+
+[editable path="Enemies/ShootingStarTrap59"]
+
+[editable path="Enemies/ShootingStarTrap60"]
+
+[editable path="Enemies/ShootingStarTrap61"]
+
+[editable path="Enemies/ShootingStarTrap62"]
