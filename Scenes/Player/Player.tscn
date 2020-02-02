@@ -9,7 +9,7 @@
 [ext_resource path="res://Assets/Sounds/jump2.ogg" type="AudioStream" id=7]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 10, 13.9225 )
+extents = Vector2( 7.03378, 14.5473 )
 
 [sub_resource type="Animation" id=2]
 resource_name = "fall"
@@ -89,7 +89,7 @@ hframes = 10
 frame = 15
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( -2.50275, 10.9915 )
+position = Vector2( 0, 10.3092 )
 shape = SubResource( 1 )
 
 [node name="stateMachine" parent="." instance=ExtResource( 2 )]
