@@ -389,7 +389,7 @@ color = Color( 0.976471, 0.776471, 0.643137, 1 )
 "anims/fade in" = SubResource( 7 )
 
 [node name="moon_piece8" type="Sprite" parent="."]
-self_modulate = Color( 1, 1, 1, 0 )
+self_modulate = Color( 1, 1, 1, 0.0107984 )
 position = Vector2( -75.3629, -22.9937 )
 texture = ExtResource( 1 )
 region_enabled = true
