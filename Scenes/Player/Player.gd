@@ -48,4 +48,10 @@ func play_anim(anim_name, speed : float = 1.0):
 
 func play_jump_sound():
 	$AudioStreamPlayer2D.play()
-	
+
+
+func _on_collected_a_piece(piece_index):
+	# get piece by index?
+	# camera follow piece?
+	## ??
+	pass
