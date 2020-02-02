@@ -1,5 +1,7 @@
 extends KinematicBody2D
 
+signal player_died()
+
 var velocity : Vector2
 var walk_speed = 30.0
 var max_walk_speed = 200.0
@@ -30,6 +32,9 @@ func process_move_and_slide(delta):
 	velocity = move_and_slide(velocity, floor_normal, slope_slide_stop, 4, PI/4, false)
 	for index in get_slide_count():
 		var collision = get_slide_collision(index)
+		if collision.get_collider().get_collision_layer_bit(2):
+			#is enemy
+			die()
 
 func jump():
 	velocity.y -= jump_speed
@@ -39,6 +44,11 @@ func apply_friction(delta):
 	if new_speed < 0.0:
 		new_speed = 0.0
 	velocity.x = sign(velocity.x) * new_speed
+
+func die():
+	print("player died")
+	emit_signal("player_died")
+	queue_free()
 
 # Animation
 func play_anim(anim_name, speed : float = 1.0):
