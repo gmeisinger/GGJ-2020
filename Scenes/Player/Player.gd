@@ -76,3 +76,4 @@ func _on_collected_a_piece(piece_index):
 
 func _on_hitbox_body_entered(body):
 	die()
+	

@@ -259,27 +259,35 @@ position = Vector2( -203.597, -1155.19 )
 
 [node name="MoonPiecePickup" parent="." instance=ExtResource( 14 )]
 position = Vector2( -69.9599, 1481.28 )
+number = 1
 
 [node name="MoonPiecePickup2" parent="." instance=ExtResource( 14 )]
 position = Vector2( -412.673, 335.561 )
+number = 2
 
 [node name="MoonPiecePickup3" parent="." instance=ExtResource( 14 )]
 position = Vector2( 267.734, 768.613 )
+number = 3
 
 [node name="MoonPiecePickup4" parent="." instance=ExtResource( 14 )]
 position = Vector2( -423.235, -206.699 )
+number = 4
 
 [node name="MoonPiecePickup5" parent="." instance=ExtResource( 14 )]
 position = Vector2( 411.823, -210.613 )
+number = 5
 
 [node name="MoonPiecePickup6" parent="." instance=ExtResource( 14 )]
 position = Vector2( -447.096, -863.044 )
+number = 6
 
 [node name="MoonPiecePickup7" parent="." instance=ExtResource( 14 )]
 position = Vector2( -309.538, -996.386 )
+number = 7
 
 [node name="MoonPiecePickup8" parent="." instance=ExtResource( 14 )]
 position = Vector2( 206.962, -1299.96 )
+number = 8
 
 [node name="MoonCollectedParticle" parent="." instance=ExtResource( 15 )]
 position = Vector2( -166.079, -142.399 )
@@ -727,6 +735,14 @@ left = true
 
 [node name="ShootingStar" parent="Enemies/ShootingStarTrap62" index="2"]
 position = Vector2( 266.519, -198.167 )
+[connection signal="picked_up" from="MoonPiecePickup" to="TheMoon" method="_on_piece_collected"]
+[connection signal="picked_up" from="MoonPiecePickup2" to="TheMoon" method="_on_piece_collected"]
+[connection signal="picked_up" from="MoonPiecePickup3" to="TheMoon" method="_on_piece_collected"]
+[connection signal="picked_up" from="MoonPiecePickup4" to="TheMoon" method="_on_piece_collected"]
+[connection signal="picked_up" from="MoonPiecePickup5" to="TheMoon" method="_on_piece_collected"]
+[connection signal="picked_up" from="MoonPiecePickup6" to="TheMoon" method="_on_piece_collected"]
+[connection signal="picked_up" from="MoonPiecePickup7" to="TheMoon" method="_on_piece_collected"]
+[connection signal="picked_up" from="MoonPiecePickup8" to="TheMoon" method="_on_piece_collected"]
 
 [editable path="Enemies/ShootingStarTrap"]
 
