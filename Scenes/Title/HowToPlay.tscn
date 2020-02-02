@@ -1,0 +1,101 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Assets/Sprites/player.png" type="Texture" id=1]
+[ext_resource path="res://Scenes/Moon/CollectedMoonPiece.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scenes/Enemy/ShootingStar.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Assets/Sprites/fishswim03_191120-Sheet.png" type="Texture" id=4]
+[ext_resource path="res://Scenes/Title/HowToPlay.gd" type="Script" id=5]
+
+[sub_resource type="Animation" id=1]
+resource_name = "walk"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 ]
+}
+
+[node name="HowToPlay" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="movement" type="Label" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -103.5
+margin_top = -74.0
+margin_right = 103.5
+margin_bottom = -60.0
+text = "Move with Arrow Keys/ Spacebar"
+
+[node name="moon_pieces" type="Label" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -165.5
+margin_top = 40.0
+margin_right = 165.5
+margin_bottom = 54.0
+text = "Collect pieces of the Moon and put it back together!"
+
+[node name="enemies" type="Label" parent="."]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -162.5
+margin_top = -38.0
+margin_right = 162.5
+margin_bottom = -24.0
+text = "But watch out for shooting stars and evil creatures!"
+
+[node name="player_walk" type="Sprite" parent="."]
+position = Vector2( 322.693, 66.7252 )
+texture = ExtResource( 1 )
+vframes = 6
+hframes = 10
+frame = 9
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="player_walk"]
+autoplay = "walk"
+anims/walk = SubResource( 1 )
+
+[node name="CollectedMoonPiece" parent="." instance=ExtResource( 2 )]
+position = Vector2( 318.568, 168.326 )
+
+[node name="ShootingStar" parent="." instance=ExtResource( 3 )]
+position = Vector2( 256.484, 273.879 )
+speed = 0
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 364.22, 268.571 )
+texture = ExtResource( 4 )
+vframes = 2
+hframes = 5
+
+[node name="Label" type="Label" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -45.5
+margin_top = -155.0
+margin_right = 45.5
+margin_bottom = -141.0
+text = "HOW TO PLAY"
+
+[editable path="ShootingStar"]
