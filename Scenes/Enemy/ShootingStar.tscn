@@ -42,7 +42,7 @@ shape = SubResource( 1 )
 position = Vector2( 0.976681, -0.122086 )
 texture = ExtResource( 1 )
 hframes = 5
-frame = 3
+frame = 2
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite"]
 autoplay = "star"
@@ -50,6 +50,7 @@ anims/star = SubResource( 2 )
 
 [node name="ShrinkFadeTrail" parent="." instance=ExtResource( 3 )]
 material = SubResource( 3 )
+position = Vector2( 0.954158, -0.0175261 )
 speed_scale = 2.0
 texture = ExtResource( 1 )
 anim_speed = 1.0
