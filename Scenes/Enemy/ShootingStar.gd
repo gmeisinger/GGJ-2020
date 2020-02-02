@@ -22,8 +22,8 @@ func _physics_process(delta):
 		if lifetime > max_lifetime:
 			reset()
 		var collision = move_and_collide(velocity)
-		if collision:
-			reset()
+		#if collision:
+			#reset()
 
 func set_left(l):
 	left = l
