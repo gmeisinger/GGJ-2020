@@ -32,9 +32,6 @@ func process_move_and_slide(delta):
 	velocity = move_and_slide(velocity, floor_normal, slope_slide_stop, 4, PI/4, false)
 	for index in get_slide_count():
 		var collision = get_slide_collision(index)
-		if collision.get_collider().get_collision_layer_bit(2):
-			#is enemy
-			die()
 
 func jump():
 	velocity.y -= jump_speed
@@ -65,3 +62,7 @@ func _on_collected_a_piece(piece_index):
 	# camera follow piece?
 	## ??
 	pass
+
+
+func _on_hitbox_body_entered(body):
+	die()

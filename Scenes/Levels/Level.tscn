@@ -162,10 +162,23 @@ position = Vector2( -33.5995, 1240.34 )
 [node name="ShootingStarTrap" parent="Enemies" instance=ExtResource( 22 )]
 position = Vector2( -239.212, 1405.84 )
 
-[node name="spawn" parent="Enemies/ShootingStarTrap" index="1"]
-position = Vector2( -285.229, -254.924 )
+[node name="ShootingStar" parent="Enemies/ShootingStarTrap" index="2"]
+position = Vector2( -298.638, -301.845 )
 
-[node name="ShootingStar" parent="Enemies/ShootingStarTrap/spawn" index="0"]
-position = Vector2( -77.1061, -79.1089 )
+[node name="ShootingStarTrap2" parent="Enemies" instance=ExtResource( 22 )]
+position = Vector2( -239.212, 1337.84 )
+left = true
+
+[node name="trigger" parent="Enemies/ShootingStarTrap2" index="0"]
+position = Vector2( 11.4716, -70.9803 )
+
+[node name="CollisionShape2D" parent="Enemies/ShootingStarTrap2/trigger" index="0"]
+position = Vector2( -2.33948, -3.51196 )
+
+[node name="ShootingStar" parent="Enemies/ShootingStarTrap2" index="2"]
+position = Vector2( 385.731, -469.617 )
+left = true
 
 [editable path="Enemies/ShootingStarTrap"]
+
+[editable path="Enemies/ShootingStarTrap2"]

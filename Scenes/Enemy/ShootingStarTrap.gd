@@ -4,19 +4,21 @@ var reset_time = 5.0
 var ready = true
 
 onready var star = load("res://Scenes/Enemy/ShootingStar.tscn")
-export var left = false
+export var left : bool
 
 func _ready():
-	$spawn/ShootingStar.left = left
+	$ShootingStar.set_left(left)
+	$ShootingStar.visible = false
 
 func _on_trigger_body_entered(body):
 	if ready:
 		ready = false
 		$reset_timer.start(reset_time)
-		$spawn/ShootingStar.fire()
+		$ShootingStar.fire()
 
 
 func _on_reset_timer_timeout():
+	$ShootingStar.reset()
 	ready = true
 
 
