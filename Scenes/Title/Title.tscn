@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://Scenes/Title/Title.gd" type="Script" id=1]
+[ext_resource path="res://Assets/Sprites/dadbrokethemoon_4.png" type="Texture" id=2]
 
 [node name="Title" type="Control"]
 anchor_right = 1.0
@@ -10,6 +11,15 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 next_scene = "res://Scenes/Levels/Level.tscn"
+how_to_scene = "res://Scenes/Title/HowToPlay.tscn"
+
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="buttons" type="VBoxContainer" parent="."]
 anchor_left = 0.5
@@ -17,22 +27,29 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 margin_left = -20.0
-margin_top = -20.0
-margin_right = 20.0
-margin_bottom = 20.0
+margin_top = 75.0
+margin_right = 69.0
+margin_bottom = 143.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Play" type="Button" parent="buttons"]
-margin_right = 40.0
+margin_right = 89.0
 margin_bottom = 20.0
-text = "Play"
+text = "Start"
+
+[node name="HowToPlay" type="Button" parent="buttons"]
+margin_top = 24.0
+margin_right = 89.0
+margin_bottom = 44.0
+text = "How To Play"
 
 [node name="Quit" type="Button" parent="buttons"]
-margin_top = 24.0
-margin_right = 40.0
-margin_bottom = 44.0
+margin_top = 48.0
+margin_right = 89.0
+margin_bottom = 68.0
 text = "Quit"
 [connection signal="button_up" from="buttons/Play" to="." method="_on_Play_button_up"]
+[connection signal="button_up" from="buttons/HowToPlay" to="." method="_on_HowToPlay_button_up"]
 [connection signal="button_up" from="buttons/Quit" to="." method="_on_Quit_button_up"]
