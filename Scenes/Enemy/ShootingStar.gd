@@ -8,6 +8,7 @@ export var left = false
 export var speed : int = 5
 
 onready var start = get_position()
+onready var shape = $CollisionShape2D
 
 var fired = false
 
@@ -15,6 +16,7 @@ var velocity = Vector2(speed, speed)
 
 func _ready():
 	lifetime = 0.0
+	#shape.disabled = true
 
 func _physics_process(delta):
 	if fired:
@@ -33,8 +35,10 @@ func set_left(l):
 func fire():
 	fired = true
 	visible = true
+	shape.disabled = false
 
 func reset():
 	set_position(start)
+	shape.disabled = true
 	visible = false
 	fired = false

@@ -23,5 +23,6 @@ func _on_reset_timer_timeout():
 
 
 func _on_ShootingStar_resetting():
-	ready = false
-	$reset_timer.start(reset_time)
+	#ready = false
+	#$reset_timer.start(reset_time)
+	pass
