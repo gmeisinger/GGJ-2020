@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://Scenes/Player/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scenes/Platform/Platform.tscn" type="PackedScene" id=2]
@@ -11,6 +11,10 @@
 [ext_resource path="res://Scenes/Levels/Clouds/Cloud4.tscn" type="PackedScene" id=9]
 [ext_resource path="res://Scenes/Levels/Clouds/Cloud5.tscn" type="PackedScene" id=10]
 [ext_resource path="res://Scenes/Levels/Clouds/Cloud6.tscn" type="PackedScene" id=11]
+[ext_resource path="res://Assets/ground.png" type="Texture" id=12]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 540.538, 9.52161 )
 
 [node name="Level" type="Node2D"]
 
@@ -46,3 +50,13 @@ position = Vector2( -400.388, 124.268 )
 
 [node name="Cloud7" parent="." instance=ExtResource( 8 )]
 position = Vector2( -397.13, 46.8906 )
+
+[node name="ground" type="Sprite" parent="."]
+position = Vector2( 2.46216, 1861.67 )
+texture = ExtResource( 12 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="ground"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ground/StaticBody2D"]
+position = Vector2( -2.46216, -250.071 )
+shape = SubResource( 1 )
