@@ -15,8 +15,6 @@ var velocity = Vector2(speed, speed)
 
 func _ready():
 	lifetime = 0.0
-	if left:
-		velocity.x *= -1
 
 func _physics_process(delta):
 	if fired:
@@ -27,9 +25,16 @@ func _physics_process(delta):
 		if collision:
 			reset()
 
+func set_left(l):
+	left = l
+	if left:
+		velocity.x *= -1
+
 func fire():
 	fired = true
+	visible = true
 
 func reset():
 	set_position(start)
+	visible = false
 	fired = false

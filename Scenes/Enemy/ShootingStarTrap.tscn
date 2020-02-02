@@ -16,11 +16,9 @@ collision_mask = 2
 [node name="CollisionShape2D" type="CollisionShape2D" parent="trigger"]
 shape = SubResource( 1 )
 
-[node name="spawn" type="Position2D" parent="."]
-
-[node name="ShootingStar" parent="spawn" instance=ExtResource( 2 )]
-
 [node name="reset_timer" type="Timer" parent="."]
+
+[node name="ShootingStar" parent="." instance=ExtResource( 2 )]
 [connection signal="body_entered" from="trigger" to="." method="_on_trigger_body_entered"]
-[connection signal="resetting" from="spawn/ShootingStar" to="." method="_on_ShootingStar_resetting"]
 [connection signal="timeout" from="reset_timer" to="." method="_on_reset_timer_timeout"]
+[connection signal="resetting" from="ShootingStar" to="." method="_on_ShootingStar_resetting"]
