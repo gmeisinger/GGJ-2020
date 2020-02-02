@@ -1,0 +1,45 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Assets/Sprites/BunnySpriteSheet.png" type="Texture" id=1]
+[ext_resource path="res://Scenes/Title/HowToPlay.gd" type="Script" id=3]
+
+[node name="HowToPlay2" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="moon_pieces" type="Label" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -165.5
+margin_top = 40.0
+margin_right = 165.5
+margin_bottom = 54.0
+text = "If you get hurt, press Spacebar to try again!"
+align = 1
+
+[node name="player_walk" type="Sprite" parent="."]
+position = Vector2( 322.693, 182.725 )
+texture = ExtResource( 1 )
+vframes = 8
+hframes = 10
+frame = 70
+
+[node name="Label" type="Label" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -45.5
+margin_top = -155.0
+margin_right = 45.5
+margin_bottom = -141.0
+text = "HOW TO PLAY"
+__meta__ = {
+"_edit_use_anchors_": false
+}

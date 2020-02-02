@@ -29,6 +29,7 @@ script = ExtResource( 5 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+next = "res://Scenes/Title/HowToPlay2.tscn"
 
 [node name="movement" type="Label" parent="."]
 anchor_left = 0.5

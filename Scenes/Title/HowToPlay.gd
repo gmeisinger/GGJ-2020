@@ -1,7 +1,7 @@
 extends Control
 
-var title = "res://Scenes/Title/Title.tscn"
+export(String, FILE, "*.tscn") var next = "res://Scenes/Title/Title.tscn"
 
 func _input(event):
 	if event is InputEventKey:
-		transitionMgr.transitionTo(title)
+		transitionMgr.transitionTo(next)
