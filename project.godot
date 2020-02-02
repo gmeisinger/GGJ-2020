@@ -18,6 +18,10 @@ _global_script_class_icons={
 config/name="Moon Repair"
 config/icon="res://icon.png"
 
+[autoload]
+
+transitionMgr="*res://Scenes/TransitionMgr/transitionMgr.tscn"
+
 [display]
 
 window/size/width=640
