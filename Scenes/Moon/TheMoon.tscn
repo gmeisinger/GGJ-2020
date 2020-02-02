@@ -1,0 +1,71 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Assets/moon_pieces.png" type="Texture" id=1]
+
+[sub_resource type="Animation" id=1]
+resource_name = "piece1"
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( -64.714, 500 ), Vector2( -64.7144, 51.08 ) ]
+}
+
+[node name="TheMoon" type="Node2D"]
+
+[node name="moon_pieces" type="Sprite" parent="."]
+position = Vector2( -64.7144, 51.08 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 0.0729523, 12, 87.927, 119 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="moon_pieces"]
+anims/piece1 = SubResource( 1 )
+
+[node name="moon_pieces2" type="Sprite" parent="."]
+position = Vector2( -23.8098, -17.1049 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 168.349, 1.15915, 159.366, 169.342 )
+
+[node name="moon_pieces3" type="Sprite" parent="."]
+position = Vector2( 1.71305, -58.9526 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 348.999, 23.5056, 137.387, 112.639 )
+
+[node name="moon_pieces4" type="Sprite" parent="."]
+position = Vector2( 75.0094, -9.35205 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 533.895, 34, 86.3158, 76.8421 )
+
+[node name="moon_pieces5" type="Sprite" parent="."]
+position = Vector2( 8.80033, 41.7491 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 56.4796, 151.551, 94.5102, 143.197 )
+
+[node name="moon_pieces6" type="Sprite" parent="."]
+position = Vector2( 66.9237, -75.4626 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 228.316, 190.214, 123.15, 130.31 )
+
+[node name="moon_pieces7" type="Sprite" parent="."]
+position = Vector2( 57.1782, 33.0844 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 387.265, 184.486, 137.469, 129.454 )
+
+[node name="moon_pieces8" type="Sprite" parent="."]
+position = Vector2( -75.5084, -21.7813 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 585.245, 171.599, 84.2397, 117.422 )

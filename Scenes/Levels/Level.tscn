@@ -1,7 +1,6 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=23 format=2]
 
 [ext_resource path="res://Scenes/Player/Player.tscn" type="PackedScene" id=1]
-[ext_resource path="res://Scenes/Platform/Platform.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Scenes/Levels/Background.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Scenes/Levels/Clouds/Cloud2.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Scenes/Levels/Clouds/Cloud1.tscn" type="PackedScene" id=5]
@@ -12,8 +11,20 @@
 [ext_resource path="res://Scenes/Levels/Clouds/Cloud5.tscn" type="PackedScene" id=10]
 [ext_resource path="res://Scenes/Levels/Clouds/Cloud6.tscn" type="PackedScene" id=11]
 [ext_resource path="res://Assets/ground.png" type="Texture" id=12]
+[ext_resource path="res://Scenes/Moon/TheMoon.tscn" type="PackedScene" id=13]
+[ext_resource path="res://Scenes/Moon/MoonPiecePickup.tscn" type="PackedScene" id=14]
+[ext_resource path="res://Scenes/Moon/CollectedMoonPiece.tscn" type="PackedScene" id=15]
+[ext_resource path="res://Scenes/Levels/Tree/Tree.tscn" type="PackedScene" id=16]
+[ext_resource path="res://Scenes/Levels/Tree/Branch2.tscn" type="PackedScene" id=17]
+[ext_resource path="res://Scenes/Levels/Tree/Branch1.tscn" type="PackedScene" id=18]
+[ext_resource path="res://Scenes/Levels/Tree/Branch3.tscn" type="PackedScene" id=19]
+[ext_resource path="res://Scenes/Levels/Tree/Branch4.tscn" type="PackedScene" id=20]
+[ext_resource path="res://Scenes/Levels/Tree/Branch5.tscn" type="PackedScene" id=21]
 
 [sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 8.85272, 1741.28 )
+
+[sub_resource type="RectangleShape2D" id=2]
 extents = Vector2( 540.538, 9.52161 )
 
 [node name="Level" type="Node2D"]
@@ -21,35 +32,21 @@ extents = Vector2( 540.538, 9.52161 )
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = ExtResource( 7 )
 
+[node name="WallLeft" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="WallLeft"]
+position = Vector2( -501.314, 0 )
+shape = SubResource( 1 )
+
+[node name="WallRight" type="StaticBody2D" parent="."]
+position = Vector2( 1005.42, -0.583977 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="WallRight"]
+position = Vector2( -501.314, 0 )
+shape = SubResource( 1 )
+
 [node name="Background2" parent="." instance=ExtResource( 3 )]
-position = Vector2( -490.3, -76.3724 )
-
-[node name="Player" parent="." instance=ExtResource( 1 )]
-position = Vector2( -137.037, 158.045 )
-
-[node name="Platform" parent="." instance=ExtResource( 2 )]
-position = Vector2( -62.7919, 282.955 )
-
-[node name="Cloud1" parent="." instance=ExtResource( 5 )]
-position = Vector2( 71.0009, 194.001 )
-
-[node name="Cloud2" parent="." instance=ExtResource( 4 )]
-position = Vector2( 273.001, 80.0004 )
-
-[node name="Cloud3" parent="." instance=ExtResource( 6 )]
-position = Vector2( 77.0007, -14.9997 )
-
-[node name="Cloud4" parent="." instance=ExtResource( 9 )]
-position = Vector2( -204.553, 8.02017 )
-
-[node name="Cloud5" parent="." instance=ExtResource( 10 )]
-position = Vector2( -266.976, 178.015 )
-
-[node name="Cloud6" parent="." instance=ExtResource( 11 )]
-position = Vector2( -400.388, 124.268 )
-
-[node name="Cloud7" parent="." instance=ExtResource( 8 )]
-position = Vector2( -397.13, 46.8906 )
+position = Vector2( -491.782, -77.6705 )
 
 [node name="ground" type="Sprite" parent="."]
 position = Vector2( 2.46216, 1861.67 )
@@ -59,4 +56,98 @@ texture = ExtResource( 12 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ground/StaticBody2D"]
 position = Vector2( -2.46216, -250.071 )
-shape = SubResource( 1 )
+shape = SubResource( 2 )
+
+[node name="Tree" parent="." instance=ExtResource( 16 )]
+position = Vector2( -251.752, 1032.18 )
+
+[node name="Player" parent="." instance=ExtResource( 1 )]
+position = Vector2( 390.708, 1500.63 )
+
+[node name="Branches" type="Node" parent="."]
+
+[node name="Branch1" parent="Branches" instance=ExtResource( 18 )]
+position = Vector2( -413.546, 1365.27 )
+
+[node name="Branch2" parent="Branches" instance=ExtResource( 17 )]
+position = Vector2( -71.2118, 1526.09 )
+
+[node name="Branch3" parent="Branches" instance=ExtResource( 19 )]
+position = Vector2( -143.355, 1333.59 )
+
+[node name="Branch4" parent="Branches" instance=ExtResource( 20 )]
+position = Vector2( -416.975, 379.212 )
+
+[node name="Branch5" parent="Branches" instance=ExtResource( 21 )]
+position = Vector2( -145.589, 875.714 )
+
+[node name="Branch6" parent="Branches" instance=ExtResource( 20 )]
+position = Vector2( -238.986, 1437.75 )
+
+[node name="Branch7" parent="Branches" instance=ExtResource( 17 )]
+position = Vector2( -182.297, 1111.1 )
+
+[node name="Branch8" parent="Branches" instance=ExtResource( 20 )]
+position = Vector2( -320.982, 1191.22 )
+
+[node name="Branch9" parent="Branches" instance=ExtResource( 18 )]
+position = Vector2( -323.271, 692.462 )
+
+[node name="Branch10" parent="Branches" instance=ExtResource( 20 )]
+position = Vector2( -334.344, 1009.17 )
+
+[node name="Branch11" parent="Branches" instance=ExtResource( 17 )]
+position = Vector2( -411.411, 916.354 )
+
+[node name="Branch12" parent="Branches" instance=ExtResource( 19 )]
+position = Vector2( -427.935, 1096.39 )
+
+[node name="Branch13" parent="Branches" instance=ExtResource( 20 )]
+position = Vector2( -412.39, 755.866 )
+
+[node name="Clouds" type="Node" parent="."]
+
+[node name="Cloud1" parent="Clouds" instance=ExtResource( 5 )]
+position = Vector2( 71.0009, 194.001 )
+
+[node name="Cloud2" parent="Clouds" instance=ExtResource( 4 )]
+position = Vector2( 273.001, 80.0004 )
+
+[node name="Cloud3" parent="Clouds" instance=ExtResource( 6 )]
+position = Vector2( 77.0007, -14.9997 )
+
+[node name="Cloud4" parent="Clouds" instance=ExtResource( 9 )]
+position = Vector2( -204.553, 8.02017 )
+
+[node name="Cloud5" parent="Clouds" instance=ExtResource( 10 )]
+position = Vector2( -266.976, 178.015 )
+
+[node name="Cloud6" parent="Clouds" instance=ExtResource( 11 )]
+position = Vector2( -400.388, 124.268 )
+
+[node name="Cloud7" parent="Clouds" instance=ExtResource( 8 )]
+position = Vector2( -397.13, 46.8906 )
+
+[node name="Cloud8" parent="Clouds" instance=ExtResource( 4 )]
+position = Vector2( -91.9941, 613.139 )
+
+[node name="Cloud9" parent="Clouds" instance=ExtResource( 11 )]
+position = Vector2( 79.4371, 511.819 )
+
+[node name="Cloud10" parent="Clouds" instance=ExtResource( 6 )]
+position = Vector2( 248.536, 453.115 )
+
+[node name="Cloud11" parent="Clouds" instance=ExtResource( 9 )]
+position = Vector2( 178.708, 282.28 )
+
+[node name="Cloud12" parent="Clouds" instance=ExtResource( 10 )]
+position = Vector2( 311.432, 338 )
+
+[node name="TheMoon" parent="." instance=ExtResource( 13 )]
+position = Vector2( -203.597, -1155.19 )
+
+[node name="MoonPiecePickup" parent="." instance=ExtResource( 14 )]
+position = Vector2( -410.522, 334.844 )
+
+[node name="MoonCollectedParticle" parent="." instance=ExtResource( 15 )]
+position = Vector2( -166.079, -142.399 )
