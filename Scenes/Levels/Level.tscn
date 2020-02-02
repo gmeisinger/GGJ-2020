@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=2]
+[gd_scene load_steps=26 format=2]
 
 [ext_resource path="res://Scenes/Player/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scenes/Enemy/PatrollingEnemy.tscn" type="PackedScene" id=2]
@@ -22,6 +22,7 @@
 [ext_resource path="res://Scenes/Levels/Tree/Branch4.tscn" type="PackedScene" id=20]
 [ext_resource path="res://Scenes/Levels/Tree/Branch5.tscn" type="PackedScene" id=21]
 [ext_resource path="res://Scenes/Enemy/ShootingStarTrap.tscn" type="PackedScene" id=22]
+[ext_resource path="res://Assets/Sounds/s04_2.ogg" type="AudioStream" id=23]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 8.85272, 1741.28 )
@@ -30,6 +31,11 @@ extents = Vector2( 8.85272, 1741.28 )
 extents = Vector2( 540.538, 9.52161 )
 
 [node name="Level" type="Node2D"]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 23 )
+volume_db = -14.032
+autoplay = true
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = ExtResource( 7 )

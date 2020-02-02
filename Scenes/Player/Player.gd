@@ -2,6 +2,14 @@ extends KinematicBody2D
 
 signal player_died()
 
+var streams = {"jump": preload("res://Assets/Sounds/jump2.ogg"),
+				"hit": preload("res://Assets/Sounds/s01.ogg"),
+				"respawn": preload("res://Assets/Sounds/s8.ogg")}
+# "res://Assets/Sounds/beep_boop.ogg",
+# "res://Assets/Sounds/landing.ogg"
+# res://Assets/Sounds/s04_2.ogg"
+# "res://Assets/Sounds/s7.ogg"
+
 var velocity : Vector2
 var walk_speed = 30.0
 var max_walk_speed = 200.0
@@ -43,9 +51,10 @@ func apply_friction(delta):
 	velocity.x = sign(velocity.x) * new_speed
 
 func die():
-	print("player died")
-	emit_signal("player_died")
-	queue_free()
+	$stateMachine.change_state('hit')
+#	print("player died")
+#	emit_signal("player_died")
+#	queue_free()
 
 # Animation
 func play_anim(anim_name, speed : float = 1.0):
@@ -53,7 +62,8 @@ func play_anim(anim_name, speed : float = 1.0):
 		$AnimationPlayer.play(anim_name, -1, speed)
 
 
-func play_jump_sound():
+func play_sound(sound):
+	$AudioStreamPlayer2D.stream = streams[sound]
 	$AudioStreamPlayer2D.play()
 
 
