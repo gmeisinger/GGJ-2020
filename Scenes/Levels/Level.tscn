@@ -1,19 +1,31 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://Scenes/Player/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scenes/Platform/Platform.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Scenes/Levels/Background.tscn" type="PackedScene" id=3]
-[ext_resource path="res://Scenes/Levels/Cloud2.tscn" type="PackedScene" id=4]
-[ext_resource path="res://Scenes/Levels/Cloud1.tscn" type="PackedScene" id=5]
-[ext_resource path="res://Scenes/Levels/Cloud3.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Scenes/Levels/Clouds/Cloud2.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Scenes/Levels/Clouds/Cloud1.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Scenes/Levels/Clouds/Cloud3.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Scenes/Levels/Env_GlowAdjustedHDR.tres" type="Environment" id=7]
+[ext_resource path="res://Scenes/Levels/Clouds/Cloud7.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Scenes/Levels/Clouds/Cloud4.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Scenes/Levels/Clouds/Cloud5.tscn" type="PackedScene" id=10]
+[ext_resource path="res://Scenes/Levels/Clouds/Cloud6.tscn" type="PackedScene" id=11]
+[ext_resource path="res://Assets/ground.png" type="Texture" id=12]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 540.538, 9.52161 )
 
 [node name="Level" type="Node2D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = ExtResource( 7 )
 
 [node name="Background2" parent="." instance=ExtResource( 3 )]
 position = Vector2( -490.3, -76.3724 )
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
-position = Vector2( -53.9739, 233.156 )
+position = Vector2( -137.037, 158.045 )
 
 [node name="Platform" parent="." instance=ExtResource( 2 )]
 position = Vector2( -62.7919, 282.955 )
@@ -26,3 +38,25 @@ position = Vector2( 273.001, 80.0004 )
 
 [node name="Cloud3" parent="." instance=ExtResource( 6 )]
 position = Vector2( 77.0007, -14.9997 )
+
+[node name="Cloud4" parent="." instance=ExtResource( 9 )]
+position = Vector2( -204.553, 8.02017 )
+
+[node name="Cloud5" parent="." instance=ExtResource( 10 )]
+position = Vector2( -266.976, 178.015 )
+
+[node name="Cloud6" parent="." instance=ExtResource( 11 )]
+position = Vector2( -400.388, 124.268 )
+
+[node name="Cloud7" parent="." instance=ExtResource( 8 )]
+position = Vector2( -397.13, 46.8906 )
+
+[node name="ground" type="Sprite" parent="."]
+position = Vector2( 2.46216, 1861.67 )
+texture = ExtResource( 12 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="ground"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ground/StaticBody2D"]
+position = Vector2( -2.46216, -250.071 )
+shape = SubResource( 1 )

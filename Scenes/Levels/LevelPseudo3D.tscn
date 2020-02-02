@@ -1,0 +1,151 @@
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://Scenes/Levels/Env_GlowAdjustedHDR.tres" type="Environment" id=1]
+[ext_resource path="res://Scenes/Levels/Clouds/Cloud2.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scenes/Levels/Clouds/Cloud7.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Scenes/Levels/Background.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Scenes/Player/Player.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Scenes/Levels/Clouds/Cloud3.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Scenes/Levels/Clouds/Cloud5.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Scenes/Levels/Clouds/Cloud4.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Scenes/Levels/Clouds/Cloud1.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Scenes/Platform/Platform.tscn" type="PackedScene" id=10]
+[ext_resource path="res://Scenes/Levels/Clouds/Cloud6.tscn" type="PackedScene" id=11]
+
+[node name="LevelPseudo3D" type="Node2D"]
+
+[node name="Background2" parent="." instance=ExtResource( 4 )]
+position = Vector2( -490.3, -76.3724 )
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = ExtResource( 1 )
+
+[node name="Player" parent="." instance=ExtResource( 5 )]
+position = Vector2( -137.037, 158.045 )
+
+[node name="Platform" parent="." instance=ExtResource( 10 )]
+position = Vector2( -62.7919, 282.955 )
+
+[node name="Cloud1" parent="." instance=ExtResource( 9 )]
+position = Vector2( 71.0009, 194.001 )
+
+[node name="Cloud2" parent="." instance=ExtResource( 2 )]
+position = Vector2( 273.001, 80.0004 )
+
+[node name="Cloud3" parent="." instance=ExtResource( 6 )]
+position = Vector2( 77.0007, -14.9997 )
+
+[node name="Cloud4" parent="." instance=ExtResource( 8 )]
+position = Vector2( -204.553, 8.02017 )
+
+[node name="Cloud5" parent="." instance=ExtResource( 7 )]
+position = Vector2( -266.976, 178.015 )
+
+[node name="Cloud6" parent="." instance=ExtResource( 11 )]
+position = Vector2( -400.388, 124.268 )
+
+[node name="Cloud7" parent="." instance=ExtResource( 3 )]
+position = Vector2( -397.13, 46.8906 )
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+layer = 0
+follow_viewport_enable = true
+follow_viewport_scale = 1.01
+
+[node name="Cloud14" parent="CanvasLayer" instance=ExtResource( 9 )]
+position = Vector2( 71.0009, 194.001 )
+
+[node name="Cloud13" parent="CanvasLayer" instance=ExtResource( 2 )]
+position = Vector2( 273.001, 80.0004 )
+
+[node name="Cloud12" parent="CanvasLayer" instance=ExtResource( 6 )]
+position = Vector2( 77.0007, -14.9997 )
+
+[node name="Cloud11" parent="CanvasLayer" instance=ExtResource( 8 )]
+position = Vector2( -204.553, 8.02017 )
+
+[node name="Cloud10" parent="CanvasLayer" instance=ExtResource( 7 )]
+position = Vector2( -266.976, 178.015 )
+
+[node name="Cloud9" parent="CanvasLayer" instance=ExtResource( 11 )]
+position = Vector2( -400.388, 124.268 )
+
+[node name="Cloud8" parent="CanvasLayer" instance=ExtResource( 3 )]
+position = Vector2( -397.13, 46.8906 )
+
+[node name="CanvasLayer2" type="CanvasLayer" parent="."]
+follow_viewport_enable = true
+follow_viewport_scale = 1.02
+
+[node name="Cloud14" parent="CanvasLayer2" instance=ExtResource( 9 )]
+position = Vector2( 71.0009, 194.001 )
+
+[node name="Cloud13" parent="CanvasLayer2" instance=ExtResource( 2 )]
+position = Vector2( 273.001, 80.0004 )
+
+[node name="Cloud12" parent="CanvasLayer2" instance=ExtResource( 6 )]
+position = Vector2( 77.0007, -14.9997 )
+
+[node name="Cloud11" parent="CanvasLayer2" instance=ExtResource( 8 )]
+position = Vector2( -204.553, 8.02017 )
+
+[node name="Cloud10" parent="CanvasLayer2" instance=ExtResource( 7 )]
+position = Vector2( -266.976, 178.015 )
+
+[node name="Cloud9" parent="CanvasLayer2" instance=ExtResource( 11 )]
+position = Vector2( -400.388, 124.268 )
+
+[node name="Cloud8" parent="CanvasLayer2" instance=ExtResource( 3 )]
+position = Vector2( -397.13, 46.8906 )
+
+[node name="CanvasLayer3" type="CanvasLayer" parent="."]
+layer = 2
+follow_viewport_enable = true
+follow_viewport_scale = 1.03
+
+[node name="Cloud14" parent="CanvasLayer3" instance=ExtResource( 9 )]
+position = Vector2( 71.0009, 194.001 )
+
+[node name="Cloud13" parent="CanvasLayer3" instance=ExtResource( 2 )]
+position = Vector2( 273.001, 80.0004 )
+
+[node name="Cloud12" parent="CanvasLayer3" instance=ExtResource( 6 )]
+position = Vector2( 77.0007, -14.9997 )
+
+[node name="Cloud11" parent="CanvasLayer3" instance=ExtResource( 8 )]
+position = Vector2( -204.553, 8.02017 )
+
+[node name="Cloud10" parent="CanvasLayer3" instance=ExtResource( 7 )]
+position = Vector2( -266.976, 178.015 )
+
+[node name="Cloud9" parent="CanvasLayer3" instance=ExtResource( 11 )]
+position = Vector2( -400.388, 124.268 )
+
+[node name="Cloud8" parent="CanvasLayer3" instance=ExtResource( 3 )]
+position = Vector2( -397.13, 46.8906 )
+
+[node name="CanvasLayer4" type="CanvasLayer" parent="."]
+layer = 3
+follow_viewport_enable = true
+follow_viewport_scale = 1.04
+
+[node name="Cloud14" parent="CanvasLayer4" instance=ExtResource( 9 )]
+position = Vector2( 71.0009, 194.001 )
+
+[node name="Cloud13" parent="CanvasLayer4" instance=ExtResource( 2 )]
+position = Vector2( 273.001, 80.0004 )
+
+[node name="Cloud12" parent="CanvasLayer4" instance=ExtResource( 6 )]
+position = Vector2( 77.0007, -14.9997 )
+
+[node name="Cloud11" parent="CanvasLayer4" instance=ExtResource( 8 )]
+position = Vector2( -204.553, 8.02017 )
+
+[node name="Cloud10" parent="CanvasLayer4" instance=ExtResource( 7 )]
+position = Vector2( -266.976, 178.015 )
+
+[node name="Cloud9" parent="CanvasLayer4" instance=ExtResource( 11 )]
+position = Vector2( -400.388, 124.268 )
+
+[node name="Cloud8" parent="CanvasLayer4" instance=ExtResource( 3 )]
+position = Vector2( -397.13, 46.8906 )
