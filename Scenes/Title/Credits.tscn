@@ -1,0 +1,69 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Assets/Background/creds.png" type="Texture" id=1]
+[ext_resource path="res://Scenes/Title/Congratulations.gd" type="Script" id=2]
+
+[node name="Credits" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+next = "res://Scenes/Title/Title.tscn"
+
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HBoxContainer" type="HBoxContainer" parent="TextureRect"]
+margin_left = 66.2656
+margin_top = 159.483
+margin_right = 304.266
+margin_bottom = 233.483
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TextureRect/HBoxContainer"]
+margin_right = 117.0
+margin_bottom = 74.0
+custom_constants/separation = 16
+
+[node name="Label" type="Label" parent="TextureRect/HBoxContainer/VBoxContainer"]
+margin_right = 117.0
+margin_bottom = 14.0
+text = "LIndsey Kitsis:"
+
+[node name="Label2" type="Label" parent="TextureRect/HBoxContainer/VBoxContainer"]
+margin_top = 30.0
+margin_right = 117.0
+margin_bottom = 44.0
+text = "Joshua Robinson:"
+
+[node name="Label3" type="Label" parent="TextureRect/HBoxContainer/VBoxContainer"]
+margin_top = 60.0
+margin_right = 117.0
+margin_bottom = 74.0
+text = "George Meisinger:"
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="TextureRect/HBoxContainer"]
+margin_left = 121.0
+margin_right = 121.0
+margin_bottom = 74.0
+custom_constants/separation = 16
+
+[node name="Label" type="Label" parent="TextureRect/HBoxContainer/VBoxContainer2"]
+margin_bottom = 14.0
+
+[node name="Label2" type="Label" parent="TextureRect/HBoxContainer/VBoxContainer2"]
+margin_top = 30.0
+margin_bottom = 44.0
+
+[node name="Label3" type="Label" parent="TextureRect/HBoxContainer/VBoxContainer2"]
+margin_top = 60.0
+margin_bottom = 74.0

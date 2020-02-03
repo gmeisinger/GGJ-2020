@@ -12,6 +12,7 @@ __meta__ = {
 }
 next_scene = "res://Scenes/Levels/Level.tscn"
 how_to_scene = "res://Scenes/Title/HowToPlay.tscn"
+credits_scene = "res://Scenes/Title/Credits.tscn"
 
 [node name="TextureRect" type="TextureRect" parent="."]
 margin_right = 40.0
@@ -45,11 +46,21 @@ margin_right = 89.0
 margin_bottom = 44.0
 text = "How To Play"
 
-[node name="Quit" type="Button" parent="buttons"]
+[node name="Credits" type="Button" parent="buttons"]
 margin_top = 48.0
 margin_right = 89.0
 margin_bottom = 68.0
+text = "Credits"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Quit" type="Button" parent="buttons"]
+margin_top = 72.0
+margin_right = 89.0
+margin_bottom = 92.0
 text = "Quit"
 [connection signal="button_up" from="buttons/Play" to="." method="_on_Play_button_up"]
 [connection signal="button_up" from="buttons/HowToPlay" to="." method="_on_HowToPlay_button_up"]
+[connection signal="button_up" from="buttons/Credits" to="." method="_on_Credits_button_up"]
 [connection signal="button_up" from="buttons/Quit" to="." method="_on_Quit_button_up"]

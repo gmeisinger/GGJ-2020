@@ -35,10 +35,10 @@ func set_left(l):
 func fire():
 	fired = true
 	visible = true
-	shape.disabled = false
+	shape.call_deferred("set_disabled", false)
 
 func reset():
 	set_position(start)
-	shape.disabled = true
+	shape.call_deferred("set_disabled", true)
 	visible = false
 	fired = false
