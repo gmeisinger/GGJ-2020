@@ -21,6 +21,12 @@ var slope_slide_stop = 25.0
 
 export (int, 0, 200) var push = 100
 
+onready var collected = []
+
+func _ready():
+	for i in range(8):
+		collected.append(false)
+
 # Movement
 func process_horizontal_movement(delta):
 	#check input and set velocity
@@ -56,6 +62,9 @@ func die():
 #	emit_signal("player_died")
 #	queue_free()
 
+func win():
+	transitionMgr.transitionTo("res://Scenes/Title/Congratulations.tscn")
+
 # Animation
 func play_anim(anim_name, speed : float = 1.0):
 	if $AnimationPlayer.current_animation != anim_name:
@@ -68,10 +77,13 @@ func play_sound(sound):
 
 
 func _on_collected_a_piece(piece_index):
-	# get piece by index?
-	# camera follow piece?
-	## ??
-	pass
+	collected[piece_index] = true
+	var win = true
+	for piece in collected:
+		if not piece:
+			win = false
+	if win:
+		win()
 
 
 func _on_hitbox_body_entered(body):
