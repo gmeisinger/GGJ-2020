@@ -15,7 +15,7 @@ _global_script_class_icons={
 
 [application]
 
-config/name="Moon Repair"
+config/name="Dad Broke The Moon!"
 run/main_scene="res://Scenes/Title/Title.tscn"
 config/icon="res://icon.png"
 
