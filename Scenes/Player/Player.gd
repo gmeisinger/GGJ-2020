@@ -63,7 +63,7 @@ func die():
 #	queue_free()
 
 func win():
-	pass
+	transitionMgr.transitionTo("res://Scenes/Title/Congratulations.tscn")
 
 # Animation
 func play_anim(anim_name, speed : float = 1.0):
