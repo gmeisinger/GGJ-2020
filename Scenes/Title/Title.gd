@@ -2,6 +2,7 @@ extends Control
 
 export(String, FILE, "*.tscn") var next_scene
 export(String, FILE, "*.tscn") var how_to_scene
+export(String, FILE, "*.tscn") var credits_scene
 
 func _ready():
 	var os_name = OS.get_name()
@@ -19,3 +20,7 @@ func _on_Quit_button_up():
 
 func _on_HowToPlay_button_up():
 	transitionMgr.transitionTo(how_to_scene)
+
+
+func _on_Credits_button_up():
+	transitionMgr.transitionTo(credits_scene)
