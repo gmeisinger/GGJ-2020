@@ -10,7 +10,7 @@ script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-next_scene = "res://Scenes/Levels/Level.tscn"
+next_scene = "res://Scenes/Title/Intro.tscn"
 how_to_scene = "res://Scenes/Title/HowToPlay.tscn"
 credits_scene = "res://Scenes/Title/Credits.tscn"
 
