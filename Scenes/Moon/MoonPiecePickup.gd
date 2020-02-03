@@ -37,9 +37,9 @@ func _on_Area2D_area_entered(area):
 		moon_anim.play('fade in')
 		yield(moon_anim, 'animation_finished')
 		_on_moon_piece_complete()
+		player._on_collected_a_piece(index)
 
 func _on_moon_piece_complete():
 	$Path2D/PathFollow2D/MoonCollectedParticle/Camera2D.current = false
 	player.get_node("Camera").current = true
 	player.get_node('stateMachine').change_state('moving')
-	
