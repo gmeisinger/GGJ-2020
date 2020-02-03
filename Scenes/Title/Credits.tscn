@@ -23,6 +23,7 @@ margin_left = 66.2656
 margin_top = 159.483
 margin_right = 304.266
 margin_bottom = 233.483
+custom_constants/separation = 16
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -35,7 +36,7 @@ custom_constants/separation = 16
 [node name="Label" type="Label" parent="TextureRect/HBoxContainer/VBoxContainer"]
 margin_right = 117.0
 margin_bottom = 14.0
-text = "LIndsey Kitsis:"
+text = "Lindsey Kitsis:"
 
 [node name="Label2" type="Label" parent="TextureRect/HBoxContainer/VBoxContainer"]
 margin_top = 30.0
@@ -50,18 +51,24 @@ margin_bottom = 74.0
 text = "George Meisinger:"
 
 [node name="VBoxContainer2" type="VBoxContainer" parent="TextureRect/HBoxContainer"]
-margin_left = 121.0
-margin_right = 121.0
+margin_left = 133.0
+margin_right = 333.0
 margin_bottom = 74.0
 custom_constants/separation = 16
 
 [node name="Label" type="Label" parent="TextureRect/HBoxContainer/VBoxContainer2"]
+margin_right = 200.0
 margin_bottom = 14.0
+text = "Art and design"
 
 [node name="Label2" type="Label" parent="TextureRect/HBoxContainer/VBoxContainer2"]
 margin_top = 30.0
+margin_right = 200.0
 margin_bottom = 44.0
+text = "Programming and visual effects"
 
 [node name="Label3" type="Label" parent="TextureRect/HBoxContainer/VBoxContainer2"]
 margin_top = 60.0
+margin_right = 200.0
 margin_bottom = 74.0
+text = "Programming and design"
