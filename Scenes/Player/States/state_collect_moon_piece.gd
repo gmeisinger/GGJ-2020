@@ -7,5 +7,5 @@ extends "res://Scenes/StateMachine/baseState.gd"
 func enter():
 	pass
 
-func update():
+func update(v):
 	pass

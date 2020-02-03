@@ -4,6 +4,7 @@
 
 [sub_resource type="Animation" id=1]
 resource_name = "fade in"
+length = 1.9
 tracks/0/type = "value"
 tracks/0/path = NodePath(".:self_modulate")
 tracks/0/interp = 2
@@ -31,6 +32,7 @@ tracks/1/keys = {
 
 [sub_resource type="Animation" id=2]
 resource_name = "fade in"
+length = 1.9
 tracks/0/type = "value"
 tracks/0/path = NodePath(".:self_modulate")
 tracks/0/interp = 2
@@ -58,6 +60,7 @@ tracks/1/keys = {
 
 [sub_resource type="Animation" id=3]
 resource_name = "fade in"
+length = 1.9
 tracks/0/type = "value"
 tracks/0/path = NodePath(".:self_modulate")
 tracks/0/interp = 2
@@ -85,6 +88,7 @@ tracks/1/keys = {
 
 [sub_resource type="Animation" id=4]
 resource_name = "fade in"
+length = 1.9
 tracks/0/type = "value"
 tracks/0/path = NodePath(".:self_modulate")
 tracks/0/interp = 2
@@ -112,6 +116,7 @@ tracks/1/keys = {
 
 [sub_resource type="Animation" id=5]
 resource_name = "fade in"
+length = 1.9
 tracks/0/type = "value"
 tracks/0/path = NodePath(".:self_modulate")
 tracks/0/interp = 2
@@ -139,6 +144,7 @@ tracks/1/keys = {
 
 [sub_resource type="Animation" id=6]
 resource_name = "fade in"
+length = 1.9
 tracks/0/type = "value"
 tracks/0/path = NodePath(".:self_modulate")
 tracks/0/interp = 2
@@ -166,6 +172,7 @@ tracks/1/keys = {
 
 [sub_resource type="Animation" id=7]
 resource_name = "fade in"
+length = 1.9
 tracks/0/type = "value"
 tracks/0/path = NodePath(".:self_modulate")
 tracks/0/interp = 2
@@ -193,6 +200,7 @@ tracks/1/keys = {
 
 [sub_resource type="Animation" id=8]
 resource_name = "fade in"
+length = 1.9
 tracks/0/type = "value"
 tracks/0/path = NodePath(".:self_modulate")
 tracks/0/interp = 2
